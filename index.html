@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <label>Masukkan angka </label>
+    <input type="text" id="input1" placeholder="0">
+    <label>Masukkan angka </label>
+    <input type="text" id="input2" placeholder="0">
+    <button onclick="tambah()" id="tambah" >+</button>
+    <button onclick="minus()" id="minus" >-</button>
+    <button onclick="pembagian()" id="pembagian" >/</button>
+    <button onclick="perkalian()" id="perkalian" >*</button>
+    <button onclick="modulus()" id="modulus" >%</button>
+
+
+
+</body>
+
+<script>
+    function tambah(){
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var hasil = parseInt(input1) + parseInt(input2); 
+        alert(hasil);
+    }
+    function minus(){
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var hasil = parseInt(input1) - parseInt(input2); 
+        alert(hasil);
+    }
+    function pembagian(){
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var hasil = parseInt(input1) / parseInt(input2); 
+        alert(hasil);
+    }
+    function perkalian(){
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var hasil = parseInt(input1) * parseInt(input2); 
+        alert(hasil);
+    }
+    function modulus(){
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var hasil = parseInt(input1) % parseInt(input2); 
+        alert(hasil);
+    }
+
+
+    
+
+
+
+</script>
+</html>
